@@ -1,16 +1,18 @@
 import React from 'react'
-import { StyleSheet,TouchableOpacity, Text, View } from 'react-native'
+import { StyleSheet,TouchableOpacity, Text, View,Image } from 'react-native'
 import {windowHeight,windowHeigth} from '../utils/Dimensions'
 
  const SocialButton = ({buttonTitle,btnType,...rest}) => {
 
    
         return (
-            <TouchableOpacity  onPress = {onPress} 
+            <TouchableOpacity   
               {...rest}  >
-                <View style={styles.button} > 
-                    
-                </View>
+              <View>
+                  <Image source >
+                      
+                  </Image>
+              </View>
             </TouchableOpacity>
         )
     };
