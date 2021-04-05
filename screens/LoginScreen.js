@@ -58,7 +58,7 @@ const LoginScreen = ({navigation}) => {
        <TouchableOpacity style= {{marginTop : 25 }} 
        onPress = {() => alert('Well you just have to register again!')}
        >
-           <Text style = {{fontWeight:'normal'}} >Forgot Password?</Text>
+           <Text style = {{fontWeight:'normal', textDecorationLine:'underline'  }} >Forgot Password?</Text>
        </TouchableOpacity>
 
 
