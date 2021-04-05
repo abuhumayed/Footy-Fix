@@ -4,7 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack'
 
 
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import SignupScreen from '../screens/SignupScreen';
+import RegisterScreen from '../screens/RegisterScreen';
 import OnboardingScreen from '../screens/OnboardingScreen';
 import LoginScreen from '../screens/LoginScreen';
 
@@ -45,8 +45,8 @@ return (
       options={{header: () => null}}
     />
     <Stack.Screen
-      name="Signup"
-      component={SignupScreen}
+      name="Register"
+      component={RegisterScreen}
 
     />
   </Stack.Navigator>
