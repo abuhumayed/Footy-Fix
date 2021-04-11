@@ -1,13 +1,11 @@
 import React,{useState,useEffect} from 'react';
-import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 
 
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import RegisterScreen from '../screens/RegisterScreen';
 import OnboardingScreen from '../screens/OnboardingScreen';
 import LoginScreen from '../screens/LoginScreen';
-import HomeScreen from '../screens/HomeScreen';
+
 
 
 const Stack = createStackNavigator();
@@ -44,7 +42,7 @@ if (isFirstLaunch === null){
   return null;
 }else if (isFirstLaunch === true ){
   routeName = 'Onboarding';
-} else{ (routeName = 'Login')
+} else{ (routeName = 'Onboarding')
 }
 return (
     <Stack.Navigator initialRouteName={routeName}
@@ -60,12 +58,7 @@ return (
       component={LoginScreen}
       options={{header: () => null}}
     />
-    <Stack.Screen
-      name="Register"
-      component={RegisterScreen}
-     
-
-    />
+  
      
   </Stack.Navigator>
  );
