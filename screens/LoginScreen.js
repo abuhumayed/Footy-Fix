@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import {  StyleSheet, View, Image, Text,TouchableOpacity,ScrollView,  } from 'react-native';
-import { KeyboardAvoidingView } from 'react-native';
+import { KeyboardAvoidingView,Platform, } from 'react-native';
 import{ StatusBar } from 'expo-status-bar';
 import FormButton from '../components/FormButton';
 import FormInput from '../components/FormInput';
@@ -70,7 +70,7 @@ const validateFields = (email,password)=> {
     <KeyboardAvoidingView
 
     style = {styles.container}
-    behavior={Platform.OS == 'ios' ? 'padding' : 'height'}>
+    behavior={Platform.OS === "ios" ? "padding" : "height"}>
     
             <StatusBar style = "night"/>
             <Image 
@@ -188,20 +188,23 @@ const validateFields = (email,password)=> {
            <Text style = {{fontWeight:'normal', textDecorationLine :'underline'  }} >Forgot Password?</Text>
        </TouchableOpacity>
 
-       <TouchableOpacity>
+       {!isCreateMode &&  <TouchableOpacity>
         <Image resizeMode = 'stretch'  
               style = {{marginBottom : 0}}
             source = {require('../src/icons/FBlogin.png')} 
             />
+       
             </TouchableOpacity>
+      }
 
-            <TouchableOpacity>
+      {!isCreateMode &&  <TouchableOpacity>
             <Image resizeMode = 'stretch'   
             style = {{marginTop : 0}}
             source = {require('../src/icons/GoogleLogin.png')}
             />
          </TouchableOpacity>
-        <View style = {{ height: 100}} />
+ }
+     <View style = {{ height: 100}} />
         
        
        

@@ -4,7 +4,7 @@ import { StyleSheet, Text, View,SafeAreaView } from 'react-native'
 const Profile = (props) => {
     return (
         <SafeAreaView 
-        style = {{flex : 1, justifyContent: 'center', alignItems:'center' }}
+        style = {styles.container}
         >
             <Text>Profile Screen</Text>
         </SafeAreaView>
@@ -13,4 +13,12 @@ const Profile = (props) => {
 
 export default Profile
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    container : {
+        backgroundColor : '#ECFAED',
+        flex : 1,
+        alignItems: 'center',
+        resizeMode : 'cover',
+        paddingTop :50
+    }
+})

@@ -2,9 +2,6 @@ import React, { useEffect, useState,useLayoutEffect } from 'react';
 import {  StyleSheet, View, Image, Text,TouchableOpacity  } from 'react-native';
 import { KeyboardAvoidingView } from 'react-native';
 import { Platform } from 'react-native';
-import RegisterScreen from './RegisterScreen';
-import FormButton from '../components/FormButton';
-import {auth} from 'firebase'
 
 
 
@@ -23,11 +20,12 @@ const HomeScreen = ({navigation}) => {
 
     return (
     <KeyboardAvoidingView style = {styles.container}  behavior = "padding" enabled keyboardVerticalOffset={Platform.select({ ios: 60, android: 78 })}>
-      
-          <Text>Welcome</Text>
-        <FormButton  buttonTitle ='Logout' onPress = {()=>{
-              auth().signOut();
-          }}/> 
+   
+
+        <Text>Welcome  </Text>
+     
+          
+    
     </KeyboardAvoidingView>
     )
 }

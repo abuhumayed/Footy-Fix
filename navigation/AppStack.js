@@ -17,10 +17,24 @@ import LoginScreen from '../screens/LoginScreen';
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 
+const globalScreenOptions = {
+    headerTitleStyle: {color: "#067B25"},
+           headerTintColor: "#067B25",
+            headerStyle : {
+            backgroundColor : '#ECFAED',
+            shadowColor : '#ECFAED', 
+            backgroundColor: "#ECFAED",
+            elavation : 0,
+        }
+    
+  };
+
 function HomeStackScreen() {
     return (
-      <Stack.Navigator>
+      <Stack.Navigator
+      screenOptions = {globalScreenOptions}   >
         <Stack.Screen
+       
           name="Home"
           component={Home}
         
@@ -30,8 +44,10 @@ function HomeStackScreen() {
   }
   function ProfileStackScreen() {
     return (
-      <Stack.Navigator>
+      <Stack.Navigator
+      screenOptions = {globalScreenOptions}   >
         <Stack.Screen
+        
           name="Profile"
           component={Profile}
           options={{ tabBarLabel: 'Profile!' }}
@@ -41,8 +57,10 @@ function HomeStackScreen() {
   }
   function SettingsStackScreen() {
     return (
-      <Stack.Navigator>
+      <Stack.Navigator
+      screenOptions = {globalScreenOptions}   >
         <Stack.Screen
+        
           name="Settings"
           component={Settings}
     
@@ -53,7 +71,8 @@ function HomeStackScreen() {
   function ChatStackScreen() {
     
     return (
-      <Stack.Navigator>
+      <Stack.Navigator
+      screenOptions = {globalScreenOptions}   >
         <Stack.Screen
           name="Group Chat"
           component={HomeScreen}
@@ -69,6 +88,7 @@ function HomeStackScreen() {
 const AppStack = () => {
  return (
 <Tab.Navigator 
+
     screenOptions = {({route}) =>({
         headerTitle : () => <Text>Header</Text> ,
         headerStyle: { backgroundColor: "#ECFAED"},

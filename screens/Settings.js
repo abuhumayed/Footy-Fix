@@ -1,16 +1,31 @@
 import React from 'react'
 import { StyleSheet, Text, View,SafeAreaView } from 'react-native'
+import {auth} from 'firebase'
+import FormButton from '../components/FormButton';
 
 const Settings = (props) => {
     return (
         <SafeAreaView 
-        style = {{flex : 1, justifyContent: 'center', alignItems:'center' }}
+        style = {styles.container}
         >
             <Text>Settings Screen</Text>
+            <FormButton 
+            style = {{flex : 1}}
+            buttonTitle ='Logout' onPress = {()=>{
+              auth().signOut();
+          }}/> 
         </SafeAreaView>
     )
 }
 
 export default Settings
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    container : {
+        backgroundColor : '#ECFAED',
+        flex : 1,
+        alignItems: 'center',
+        resizeMode : 'cover',
+        paddingTop :50
+    }
+})
