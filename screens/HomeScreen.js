@@ -33,8 +33,8 @@ const signOutUser = () => {
            headerTintColor: 'black',
            headerLeft: () => 
                <View >
-                   <TouchableOpacity onPress= {signOutUser} activeOpacity = {0.5}>
-                       <Text style = {styles.signOutText} > Sign Out</Text>
+                   <TouchableOpacity onPress= {()=>{}} activeOpacity = {0.5}>
+                       
                <Avatar marginLeft = {10} rounded source = {{uri: auth?.currentUser?.photoURL}} />
                  </TouchableOpacity>
                </View>

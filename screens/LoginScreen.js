@@ -96,7 +96,6 @@ const validateFields = (email,password)=> {
          <FormInput 
          placeholderText = "Email"
          text ={emailField.text}  
-         value = {emailField}
          autoFocus type = "email"
          onChangeText={(text)=>{
             setEmailField({text});
@@ -110,7 +109,6 @@ const validateFields = (email,password)=> {
          <FormInput 
          placeholderText = "Password" 
          text ={passwordField.text} 
-         value = {passwordField}
          secureTextEntry = {true}
          onChangeText = {(text)=>{
             setPasswordField({text});

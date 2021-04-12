@@ -21,7 +21,7 @@ const globalScreenOptions = {
             backgroundColor : '#ECFAED',
             shadowColor : '#ECFAED', 
             backgroundColor: "#ECFAED",
-            elavation : 0,
+         
         }
     
   };
