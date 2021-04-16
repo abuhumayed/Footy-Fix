@@ -17,10 +17,20 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.FootyFix",
+      "config": {
+        "googleSignIn": {
+          "reservedClientId": "com.googleusercontent.apps.295267838479-69ef9bi96nqtk7s92heoh0buicibk5m3"
+        }
+      },
+      "googleServicesFile": "./GoogleService-Info.plist"
+      
     },
     "android": {
       "adaptiveIcon": {
+        "package": "com.FootyFix",
+        "googleServicesFile": "./google-services.json",
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       }

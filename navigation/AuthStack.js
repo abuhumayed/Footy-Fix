@@ -21,7 +21,7 @@ const globalScreenOptions = {
             backgroundColor : '#ECFAED',
             shadowColor : '#ECFAED', 
             backgroundColor: "#ECFAED",
-         
+           
         }
     
   };
@@ -42,7 +42,7 @@ if (isFirstLaunch === null){
   return null;
 }else if (isFirstLaunch === true ){
   routeName = 'Onboarding';
-} else{ (routeName = 'Onboarding')
+} else{ (routeName = 'Onboa')
 }
 return (
     <Stack.Navigator initialRouteName={routeName}

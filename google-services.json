@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "295267838479",
+    "firebase_url": "https://footyfix-a895e-default-rtdb.firebaseio.com",
+    "project_id": "footyfix-a895e",
+    "storage_bucket": "footyfix-a895e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:295267838479:android:b7c56b833776814700117a",
+        "android_client_info": {
+          "package_name": "com.FootyFix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "295267838479-cgvb2bdcnpapk18gn862l6trumpgnf1b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmMQtatJk5TI1-s7Rl-WcVqNwoNK69nN4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "295267838479-cgvb2bdcnpapk18gn862l6trumpgnf1b.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "295267838479-uu8fnks5hakfs7c7f3h9fb8ekhb7512i.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.footysocialapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

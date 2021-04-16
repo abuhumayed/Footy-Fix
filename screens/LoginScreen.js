@@ -5,7 +5,7 @@ import{ StatusBar } from 'expo-status-bar';
 import FormButton from '../components/FormButton';
 import FormInput from '../components/FormInput';
 import validator from 'validator'
-import {auth} from 'firebase'
+import {auth,firestore} from 'firebase'
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 
 
@@ -87,7 +87,7 @@ const validateFields = (email,password)=> {
          placeholderText = "Name"
          autoFocus 
               type = 'text'
-              value = {name}
+         
               onChangeText = {(text) => setName(text)}
         
     
@@ -96,6 +96,7 @@ const validateFields = (email,password)=> {
          <FormInput 
          placeholderText = "Email"
          text ={emailField.text}  
+
          autoFocus type = "email"
          onChangeText={(text)=>{
             setEmailField({text});
@@ -109,6 +110,7 @@ const validateFields = (email,password)=> {
          <FormInput 
          placeholderText = "Password" 
          text ={passwordField.text} 
+       
          secureTextEntry = {true}
          onChangeText = {(text)=>{
             setPasswordField({text});
@@ -130,7 +132,7 @@ const validateFields = (email,password)=> {
                  
         {isCreateMode &&   <FormInput 
          placeholderText = "Profile Picture URL (optional)" 
-         value = {imageUrl}
+      
          onChangeText = {(text) => setImageUrl(text)}
          onSubmitEditing = {createAccount}
         

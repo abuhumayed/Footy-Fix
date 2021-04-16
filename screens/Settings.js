@@ -10,10 +10,17 @@ const Settings = (props) => {
         >
             <Text>Settings Screen</Text>
             <FormButton 
-            style = {{flex : 1}}
+            style = {{flex : 1, alignItems: 'flex-start'}}
+            buttonTitle ='Join a league' onPress = {()=>{}}/> 
+             <FormButton 
+            style = {{flex : 1, alignItems: 'flex-start',marginTop:-200}}
+            buttonTitle ='Account' onPress = {()=>{}}/> 
+            <FormButton 
+            style = {{flex : 1, }}
             buttonTitle ='Logout' onPress = {()=>{
               auth().signOut();
           }}/> 
+        
         </SafeAreaView>
     )
 }
@@ -25,7 +32,7 @@ const styles = StyleSheet.create({
         backgroundColor : '#ECFAED',
         flex : 1,
         alignItems: 'center',
-        resizeMode : 'cover',
-        paddingTop :50
+         
+       
     }
 })

@@ -118,7 +118,7 @@ const AppStack = () => {
      <Tab.Screen name = "Home" component = {HomeStackScreen} 
      options={{
           tabBarLabel: 'Home',
-          tabBarColor : '#e88c54',
+          tabBarColor : '#30AF77',
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="home" color={color} size={26} />
           ),
@@ -126,7 +126,7 @@ const AppStack = () => {
      <Tab.Screen name = "Profile" component = {ProfileStackScreen}
       options={{
           tabBarLabel: 'Profile',
-          tabBarColor : '#f60095',
+          tabBarColor : '#30AF77',
           tabBarIcon: ({ color }) => (
             <Ionicons name="ios-person" color={color} size={26} />
           ),
@@ -142,7 +142,7 @@ const AppStack = () => {
      <Tab.Screen name = "Chat" component = {ChatStackScreen} 
      options={{
           tabBarLabel: 'Chats',
-          tabBarColor : '',
+          tabBarColor : '#30AF77',
           tabBarIcon: ({ color }) => (
             <Icon name="comment" color={color} size={20} />
           ),
@@ -150,7 +150,7 @@ const AppStack = () => {
      <Tab.Screen name = "Settings" component = {SettingsStackScreen}
       options={{
           tabBarLabel: 'Settings',
-          tabBarColor : '#808080',
+          tabBarColor : '#30AF77',
           tabBarIcon: ({ color }) => (
             <Ionicons name="settings" color={color} size={26} />
           ),

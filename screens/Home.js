@@ -1,14 +1,18 @@
-import React, { useEffect, useState,useLayoutEffect } from 'react';
+import React, { useEffect, useState,useLayoutEffect, useContext } from 'react';
 import {  StyleSheet, View, Image, Text,TouchableOpacity  } from 'react-native';
 import { KeyboardAvoidingView } from 'react-native';
 import { Platform } from 'react-native';
-
+import {createAccount} from './LoginScreen'
+import { db, auth } from '../firebase';
+import * as firebase from 'firebase';
+import { LogBox } from 'react-native';
 
 
 
 
 const HomeScreen = ({navigation}) => {
 
+    
 
    useLayoutEffect(() => {
     navigation.setOptions({
@@ -22,7 +26,7 @@ const HomeScreen = ({navigation}) => {
     <KeyboardAvoidingView style = {styles.container}  behavior = "padding" enabled keyboardVerticalOffset={Platform.select({ ios: 60, android: 78 })}>
    
 
-        <Text>Welcome  </Text>
+        <Text>Welcome   </Text>
      
           
     
