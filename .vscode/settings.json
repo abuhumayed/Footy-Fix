@@ -1,0 +1,6 @@
+{
+    "editor.formatOnSave": true,    //enables format on save!
+    "javascript.validate.enable": false,
+    "javascript.format.enable": false,
+    "prettier.eslintIntegration": true //uses eslint-prettier as parser
+}
