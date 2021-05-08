@@ -28,7 +28,7 @@ const HomeScreen = ({ navigation }) => {
 
   useLayoutEffect(() => {
     navigation.setOptions({
-      title: "Group Chats",
+      title: "Chats",
       headerTintStyle: { color: "black" },
       headerTintColor: "black",
       headerLeft: () => (

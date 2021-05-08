@@ -23,22 +23,31 @@ const OnboardingScreen = ({ navigation }) => {
       NextButtonComponent={Next}
       pages={[
         {
-          backgroundColor: "#fff",
-          image: <Image source={require("../assets/favicon.png")} />,
-          title: "Onboarding 1",
-          subtitle: "Done with React Native Onboarding Swiper",
+          backgroundColor: "#C5D82E",
+          image: (
+            <Image
+              style={[
+                { width: 414 },
+                { height: 415 },
+                { resizeMode: "contain" },
+              ]}
+              source={require("../assets/onboarding1.jpg")}
+            />
+          ),
+          title: "Be apart of a community!",
+          subtitle: "Have interactions and play football with new friends.",
         },
         {
           backgroundColor: "#fff",
           image: <Image source={require("../assets/favicon.png")} />,
           title: "Onboarding 2",
-          subtitle: "Done with React Native Onboarding Swiper",
+          subtitle: "",
         },
         {
           backgroundColor: "#fff",
           image: <Image source={require("../assets/favicon.png")} />,
           title: "Onboarding 3",
-          subtitle: "Done with React Native Onboarding Swiper",
+          subtitle: "",
         },
       ]}
     />
@@ -52,5 +61,11 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
+  },
+  image: {
+    flex: 1,
+    width: 50,
+    height: 50,
+    resizeMode: "contain",
   },
 });
