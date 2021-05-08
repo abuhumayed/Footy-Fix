@@ -14,6 +14,7 @@ import HomeScreen from "../screens/HomeScreen";
 import AddChatScreen from "../screens/AddChatScreen";
 import LoginScreen from "../screens/LoginScreen";
 import createGame from "../screens/createGame";
+import EditProfileScreen from "../screens/EditProfileScreen";
 
 const Stack = createStackNavigator();
 const Tab = createMaterialBottomTabNavigator();
@@ -57,6 +58,10 @@ function SettingsStackScreen() {
   return (
     <Stack.Navigator screenOptions={globalScreenOptions}>
       <Stack.Screen name="Settings" component={Settings} />
+      <Stack.Screen
+        name="EditProfile"
+        component={EditProfileScreen}
+      ></Stack.Screen>
     </Stack.Navigator>
   );
 }

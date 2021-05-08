@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, SafeAreaView } from "react-native";
 import { auth } from "firebase";
 import FormButton from "../components/FormButton";
 
-const Settings = (props) => {
+const Settings = ({ navigation }) => {
   return (
     <SafeAreaView style={styles.container}>
       <Text>Settings Screen</Text>
@@ -14,8 +14,8 @@ const Settings = (props) => {
       />
       <FormButton
         style={{ flex: 1, alignItems: "flex-start", marginTop: -200 }}
-        buttonTitle="Account"
-        onPress={() => {}}
+        buttonTitle="Edit Profile"
+        onPress={() => navigation.navigate("EditProfile")}
       />
       <FormButton
         style={{ flex: 1 }}

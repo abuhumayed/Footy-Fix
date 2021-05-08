@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useLayoutEffect, useState } from "react";
 import {
   StyleSheet,
   Text,
@@ -10,6 +10,9 @@ import {
   useWindowDimensions,
 } from "react-native";
 import { Ionicons, MaterialIcons } from "@expo/vector-icons";
+import { Avatar } from "react-native-elements";
+import { auth, db } from "../firebase";
+import * as firebase from "firebase";
 
 const listTab = [
   {
@@ -28,21 +31,26 @@ export default function App() {
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={{ flexDirection: "row" }}>
           <View style={styles.profileImage}>
-            <Image
-              source={require("../assets/PlayerProfilePlaceHolder.jpg")}
-              style={styles.image}
-              resizeMode="center"
-            ></Image>
+            <TouchableOpacity onPress={() => {}} activeOpacity={0.5}>
+              <Avatar
+                marginLeft={20}
+                marginTop={20}
+                square
+                width={150}
+                height={150}
+                source={{ uri: auth?.currentUser?.photoURL }}
+              />
+            </TouchableOpacity>
           </View>
 
-          <View style={styles.infoContainer}>
+          <View style={[styles.infoContainer, { paddingLeft: 30 }]}>
             <Text
               style={[
                 styles.text,
                 { fontWeight: "200", fontSize: 20, fontWeight: "bold" },
               ]}
             >
-              Julian{" "}
+              {" "}
             </Text>
             <Text
               style={[
